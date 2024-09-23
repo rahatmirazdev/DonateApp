@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header-container sticky top-0 z-10 backdrop-blur-md">
+      <div class="bg-container bg-[#F9F7F3]/80">
+        <div class="max-w-[1165px] m-auto">
+          <nav class="flex justify-between items-center py-6 px-4 ">
+            <a
+              id="blog-button"
+              href="/"
+              class="py-3 px-8 text-[#111111] font-lexend text-xl font-semibold leading-[25px] rounded-lg bg-[#B4F461]"
+            >
+              Home
+            </a>
+            <div class="logo flex items-center gap-4">
+              <img src="./assets/logo.png" alt="logo" />
+              <span
+                class="text-[#111111] font-lexend text-[20px] font-semibold leading-[25px] text-left hidden sm:block"
+                >Donate Bangladesh</span
+              >
+            </div>
+            <div class="ammount flex items-center gap-3">
+              <img src="./assets/coin.png" alt="coin" />
+              <span
+                id="my-main-ammount"
+                class="text-[#111111B3] font-lexend text-[20px] font-medium leading-[25px] text-left"
+                >15000 BDT</span
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-[1165px] px-4  m-auto">
+      <div class="faq mt-14">
+        <h1
+          class="text-[#111111] font-lexend text-[40px] font-semibold leading-[50px] my-4"
+        >
+          Frequently Asked Questions
+        </h1>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is document object model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>Dom is like a conainer who holds all the elements in the document.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do I select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>There is several methods to get a element. - getElementById(), getElementsByClassName(), querySelector(), getElementsByTagName() and querySelectorAll()</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of DOM, and why is it useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. And this is useful - because it allows I to only add a single event listener to handle potentially thousands of elements, which can be more efficient than adding individual event listeners to each of those elements.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+                How do I manipulate and elements attributes and styles using the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                For attributes: I can use the getAttribute(), setAttribute(), and removeAttribute() methods.
+                <br>
+                For styles: I can use the style property of the element, which exposes an object with the element's inline styles. I can set individual styles using the style object's properties, or I can add or remove entire classes using the classList property.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
